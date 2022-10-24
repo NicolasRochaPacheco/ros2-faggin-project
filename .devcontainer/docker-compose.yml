@@ -1,0 +1,19 @@
+version: "2.3"
+services:
+  # This service is for the main devcontainer
+  fagging-devcontainer:
+    # Build configurations
+    build:
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
+
+    volumes:
+      - ..:/home/fagging
+    user: "fagging"
+    init: true
+    privileged: true
+    working_dir: /home/fagging
+    network_mode: host
+    stdin_open: true
+    tty: true
+    command: "/bin/bash"

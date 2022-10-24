@@ -1,0 +1,6 @@
+{
+    "name": "Fagging Project Dev. Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "fagging-devcontainer",
+    "workspaceFolder": "/home/fagging"
+}
